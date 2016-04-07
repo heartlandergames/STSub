@@ -36,7 +36,7 @@ function MoveKeyboard ()
 
     if(Input.GetButton("W"))
     {
-        transform.Translate(transform.forward * Time.deltaTime * moveSpeed);
+        transform.Translate(transform.forward * Time.deltaTime *  moveSpeed);
     }
     if(Input.GetButton("S"))
     {
