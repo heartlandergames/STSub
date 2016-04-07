@@ -38,7 +38,7 @@ enum itemType
     }
 
 function Start () {
-
+    ItemFirst();
 }
 
 function Update () {
@@ -57,7 +57,8 @@ function Item()
     durability = Random.Range(0,100);
     maxDurability = 100;
     lastCheck = Time.time;
-}
+
+}    
 
 function Item(nam : String, typ : int, wei : float, siz : Vector3, quan : float, mQua : float, qual : float, dur : float, mDur : float)
     {
@@ -71,4 +72,9 @@ function Item(nam : String, typ : int, wei : float, siz : Vector3, quan : float,
         durability = dur;
         maxDurability = mDur;
         lastCheck = Time.time;
+    }
+
+    function ItemFirst()
+    {
+        transform.localScale = size;
     }
